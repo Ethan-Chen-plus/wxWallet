@@ -1,0 +1,75 @@
+/* pages/index/index.wxss */
+/*1 背景容器样式*/
+.container {
+  height: 100vh; /*高度为100视窗，写成100%无效*/
+  background-color: silver; /*背景颜色为银色*/
+  display: flex; /*flex布局模型*/
+  flex-direction: column; /*垂直布局*/
+}
+
+/*2 面板1：顶端状态栏*/
+.topPanel {
+  height: 300rpx; /*高度*/
+  background-color: #686f79; /*背景颜色为灰色#686F79*/
+  display: flex; /*flex布局模型*/
+  flex-direction: row; /*水平布局*/
+}
+/*2-1 面板1：方格样式*/
+.box1 {
+  display: flex;/*flex布局模型*/
+  flex-direction: column;/*垂直布局*/
+  align-items: center;/*水平方向居中*/
+  width: 33%;/*宽度约占屏幕1/3*/
+  height: 250rpx;/*高度*/
+}
+/*2-2 面板1：方格内图标样式*/
+.box1 image{
+  width: 110rpx;/*宽度*/
+  height: 110rpx;/*高度*/
+  margin: 20rpx;/*四周外边距均为20rpx*/
+}
+/*2-3 面板1：方格内文本样式*/
+.box1 text{
+  text-align: center;/*文本居中*/
+  color: white;/*字体颜色为白色*/
+  font-size: 35rpx;/*字号35rpx大小*/
+}
+
+/*3 面板2：腾讯服务栏*/
+.servicePanel {
+  min-height: 600rpx; /*最小高度*/
+  background-color: white; /*背景颜色为白色*/
+  margin: 20rpx 0; /*上下外边距20rpx，左右0*/
+}
+/*3-1 面板2：第一行标题样式*/
+.serviceTitle {
+  padding: 20rpx;/*四周内边距20rpx*/
+  border: 1rpx solid silver;/*1rpx宽的银色实线边框*/
+  font-size: 30rpx;/*字号30rpx大小*/
+  color: gray;/*字体颜色为灰色*/
+}
+/*3-2 面板2：九宫格区域样式*/
+.serviceBlocks {
+  display: flex;/*flex布局模型*/
+  flex-direction: row;/*水平布局*/
+  flex-wrap: wrap;/*允许换行*/
+}
+/*3-2-1 面板2：九宫格区域-方格样式*/
+.box2 {
+  border: 1rpx solid silver;/*1rpx宽的银色实线边框*/
+  display: flex;/*flex布局模型*/
+  flex-direction: column;/*垂直布局*/
+  align-items: center;/*水平方向居中*/
+  justify-content: center;/*垂直方向居中*/
+  width: 32.9%;/*宽度约占屏幕1/3*/
+  height: 230rpx;/*高度230rpx*/
+}
+/*3-2-2 面板2：方格内图标*/
+.box2 image {
+  width: 90rpx;/*宽度*/
+  height: 90rpx;/*高度*/
+}
+/*3-2-3 面板2：方格内文本*/
+.box2 text {
+  font-size: 30rpx;/*字号30rpx大小*/
+}
